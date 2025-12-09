@@ -18,6 +18,6 @@ function calcularFactorial(n){
 let numero = obtenerNumero();
 let resultado = calcularFactorial(numero);
 
-console.log("El factorial de " + numero + " es: " + resultado);
+console.log(" El factorial de " + numero + " es: " + resultado);
 
-document.getElementById("resultado").innerText = "El factorial de " + numero + " es: " + resultado;
+document.getElementById("resultado").innerText = " El factorial de " + numero + " es: " + resultado;
