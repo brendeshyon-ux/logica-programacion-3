@@ -17,16 +17,17 @@ body {
 }
 
 .container {
-    background: white;
+    background:linear-gradient(135deg, rgba(102, 50, 109, 0.293), rgba(61, 110, 148, 0.337), rgba(96, 106, 58, 0.238));
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     text-align: center;
-    max-width: 400px;
+    max-width:600px;
+    backdrop-filter: blur(20px);
 }
 
 h1 {
-    color: #6a11cb;
+    color:#540863;
     margin-bottom: 30px;
     font-size: 2rem;
 }
@@ -34,7 +35,7 @@ h1 {
 #resultado {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: whitesmoke;
     opacity: 0;
     animation: fadeBounce 2s forwards;
 }
@@ -43,4 +44,23 @@ h1 {
     0% { opacity: 0; transform: translateY(20px); }
     50% { opacity: 1; transform: translateY(-10px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #resultado {
+        font-size: 1.2rem;
+    }
 }
